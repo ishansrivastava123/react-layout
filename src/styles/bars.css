@@ -1,0 +1,30 @@
+.bar-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar-detail > *:first-child {
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .bar-detail {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        width: 100px;
+    }
+
+    .bar-detail > *:first-child {
+        transform: rotate(90deg);
+        padding: 0;
+    }
+}

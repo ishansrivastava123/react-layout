@@ -1,0 +1,31 @@
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.stat > *:first-child {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.stat > *:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.change {
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change > *:first-child {
+    display: flex;
+}
+
+.change > :nth-child(2) {
+    font-weight: bold;
+}

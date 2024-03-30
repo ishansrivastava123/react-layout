@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'century gothic', sans-serif;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home > *:first-child {
+    min-width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+}
